@@ -5,16 +5,16 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="[TOC] jQuery中的选择器用jQ选择器选择出来的是个jQ对象,他只能用jQ中提供的方法,不能用原生的方法和属性 ###如何把一个jQ对象变成原生对象  1.$(&amp;quot;#box&amp;quot;)[0] 2.$(&amp;quot;#box&amp;quot;).get(0)  ###把原生对象变成一个JQ对象通过JQ选择器 ##1.基本选择器 ###id选择器$(&amp;quot;#box&amp;quot;)获取得是">
+  <meta name="description" content="[TOC] jQuery中的选择器用jQ选择器选择出来的是个jQ对象,他只能用jQ中提供的方法,不能用原生的方法和属性 如何把一个jQ对象变成原生对象 1.$(&amp;quot;#box&amp;quot;)[0] 2.$(&amp;quot;#box&amp;quot;).get(0)  把原生对象变成一个JQ对象通过JQ选择器 1.基本选择器id选择器$(&amp;quot;#box&amp;quot;)获取得是一个 JQ对象 类选择器$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2017/06/20/jQuery中的选择器/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="[TOC] jQuery中的选择器用jQ选择器选择出来的是个jQ对象,他只能用jQ中提供的方法,不能用原生的方法和属性 ###如何把一个jQ对象变成原生对象  1.$(&amp;quot;#box&amp;quot;)[0] 2.$(&amp;quot;#box&amp;quot;).get(0)  ###把原生对象变成一个JQ对象通过JQ选择器 ##1.基本选择器 ###id选择器$(&amp;quot;#box&amp;quot;)获取得是">
-<meta property="og:updated_time" content="2017-06-09T08:17:05.003Z">
+<meta property="og:description" content="[TOC] jQuery中的选择器用jQ选择器选择出来的是个jQ对象,他只能用jQ中提供的方法,不能用原生的方法和属性 如何把一个jQ对象变成原生对象 1.$(&amp;quot;#box&amp;quot;)[0] 2.$(&amp;quot;#box&amp;quot;).get(0)  把原生对象变成一个JQ对象通过JQ选择器 1.基本选择器id选择器$(&amp;quot;#box&amp;quot;)获取得是一个 JQ对象 类选择器$">
+<meta property="og:updated_time" content="2017-06-20T07:01:41.026Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="[TOC] jQuery中的选择器用jQ选择器选择出来的是个jQ对象,他只能用jQ中提供的方法,不能用原生的方法和属性 ###如何把一个jQ对象变成原生对象  1.$(&amp;quot;#box&amp;quot;)[0] 2.$(&amp;quot;#box&amp;quot;).get(0)  ###把原生对象变成一个JQ对象通过JQ选择器 ##1.基本选择器 ###id选择器$(&amp;quot;#box&amp;quot;)获取得是">
+<meta name="twitter:description" content="[TOC] jQuery中的选择器用jQ选择器选择出来的是个jQ对象,他只能用jQ中提供的方法,不能用原生的方法和属性 如何把一个jQ对象变成原生对象 1.$(&amp;quot;#box&amp;quot;)[0] 2.$(&amp;quot;#box&amp;quot;).get(0)  把原生对象变成一个JQ对象通过JQ选择器 1.基本选择器id选择器$(&amp;quot;#box&amp;quot;)获取得是一个 JQ对象 类选择器$">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -77,47 +77,34 @@
       
         <p>[TOC]</p>
 <h1 id="jQuery中的选择器"><a href="#jQuery中的选择器" class="headerlink" title="jQuery中的选择器"></a>jQuery中的选择器</h1><p>用jQ选择器选择出来的是个jQ对象,他只能用jQ中提供的方法,不能用原生的方法和属性</p>
-<p>###如何把一个jQ对象变成原生对象</p>
-<ul>
+<h3 id="如何把一个jQ对象变成原生对象"><a href="#如何把一个jQ对象变成原生对象" class="headerlink" title="如何把一个jQ对象变成原生对象"></a>如何把一个jQ对象变成原生对象</h3><ul>
 <li>1.<code>$(&quot;#box&quot;)[0]</code></li>
 <li>2.<code>$(&quot;#box&quot;).get(0)</code></li>
 </ul>
-<p>###把原生对象变成一个JQ对象<br>通过JQ选择器</p>
-<p>##1.基本选择器</p>
-<p>###id选择器<br><code>$(&quot;#box&quot;)</code>获取得是一个 JQ对象</p>
-<p>###类选择器<br><code>$(&quot;.box&quot;)</code>获取的是JQ集合</p>
-<p>###通配符选择器(<em>)<br>`$(“</em>“)`获取的是JQ集合</p>
-<p>###集合选择器<br><code>(&quot;div,#box,p&quot;)</code>获取的是JQ集合</p>
-<p>##2.层次选择器</p>
-<p>###后代选择器<br><code>$(&quot;#box p&quot;)</code> 获取的是JQ集合</p>
-<p>###子代选择器<br><code>$(&quot;#box&gt;p&quot;)</code>获取的是JQ集合</p>
-<p>###弟弟选择器</p>
-<p>####下一个弟弟选择器</p>
-<ul>
+<h3 id="把原生对象变成一个JQ对象"><a href="#把原生对象变成一个JQ对象" class="headerlink" title="把原生对象变成一个JQ对象"></a>把原生对象变成一个JQ对象</h3><p>通过JQ选择器</p>
+<h2 id="1-基本选择器"><a href="#1-基本选择器" class="headerlink" title="1.基本选择器"></a>1.基本选择器</h2><h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><p><code>$(&quot;#box&quot;)</code>获取得是一个 JQ对象</p>
+<h3 id="类选择器"><a href="#类选择器" class="headerlink" title="类选择器"></a>类选择器</h3><p><code>$(&quot;.box&quot;)</code>获取的是JQ集合</p>
+<h3 id="通配符选择器"><a href="#通配符选择器" class="headerlink" title="通配符选择器(*)"></a>通配符选择器(*)</h3><p><code>$(&quot;*&quot;)</code>获取的是JQ集合</p>
+<h3 id="集合选择器"><a href="#集合选择器" class="headerlink" title="集合选择器"></a>集合选择器</h3><p><code>(&quot;div,#box,p&quot;)</code>获取的是JQ集合</p>
+<h2 id="2-层次选择器"><a href="#2-层次选择器" class="headerlink" title="2.层次选择器"></a>2.层次选择器</h2><h3 id="后代选择器"><a href="#后代选择器" class="headerlink" title="后代选择器"></a>后代选择器</h3><p><code>$(&quot;#box p&quot;)</code> 获取的是JQ集合</p>
+<h3 id="子代选择器"><a href="#子代选择器" class="headerlink" title="子代选择器"></a>子代选择器</h3><p><code>$(&quot;#box&gt;p&quot;)</code>获取的是JQ集合</p>
+<h3 id="弟弟选择器"><a href="#弟弟选择器" class="headerlink" title="弟弟选择器"></a>弟弟选择器</h3><h4 id="下一个弟弟选择器"><a href="#下一个弟弟选择器" class="headerlink" title="下一个弟弟选择器"></a>下一个弟弟选择器</h4><ul>
 <li><code>$(&quot;#box+&quot;)</code>获取的是一个jQ对象</li>
-<li><code>$(&quot;#box+div&quot;)</code>获取的是一个jQ对象(表示#box的第一个是div的弟弟)<br>####所有的弟弟</li>
+<li><code>$(&quot;#box+div&quot;)</code>获取的是一个jQ对象(表示#box的第一个是div的弟弟)<h4 id="所有的弟弟"><a href="#所有的弟弟" class="headerlink" title="所有的弟弟"></a>所有的弟弟</h4></li>
 <li><code>$(&quot;#box~&quot;)</code>获取所有的弟弟,是一个jQ集合</li>
 <li><code>$(&quot;#box~div&quot;)</code>获取所有标签名为div的弟弟,是一个集合</li>
 </ul>
-<p>##3.基本过滤选择器</p>
-<p>###:first(获取第一个元素)</p>
-<ul>
+<h2 id="3-基本过滤选择器"><a href="#3-基本过滤选择器" class="headerlink" title="3.基本过滤选择器"></a>3.基本过滤选择器</h2><h3 id="first-获取第一个元素"><a href="#first-获取第一个元素" class="headerlink" title=":first(获取第一个元素)"></a>:first(获取第一个元素)</h3><ul>
 <li><code>$(&quot;div :first&quot;)</code>表示选取div中的第一个孩子元素,如果第一个div中没有,就去第二个div中找</li>
-<li><code>$(&quot;div:first&quot;)</code>所有div中的第一个div<br>###:last(获取最后一个元素)<br><code>$(&quot;div:last&quot;)</code>所有div中的最后一个div<br>###:not(去除所有与给定选择器匹配的元素)<br><code>$(&quot;div:not(.box)&quot;)</code>class名不是box的所有div<br>###:odd(奇数)<br><code>$(&quot;div:odd&quot;)</code>索引是奇数的集合<br>###:odd(偶数)<br><code>$(&quot;div:even&quot;)</code>索引是偶数的集合<br>###:eq(索引)<br><code>$(&quot;div:eq(1)&quot;)</code>选取索引为1的div<br>###:gt<br><code>$(&quot;div:gt(2)&quot;)</code>选取索引大于2的div<br>###:lt<br><code>$(&quot;div:lt(2)&quot;)</code>选取索引小于2的div<br>###:header<br>选取所有的h(h1-h6)标签<br><code>$(&quot;.box :header&quot;)</code>类名是box的元素中所有h标签<br>###:animated<br>选取所有进行动画的标签(js动画,css3动画不行)</li>
+<li><code>$(&quot;div:first&quot;)</code>所有div中的第一个div<h3 id="last-获取最后一个元素"><a href="#last-获取最后一个元素" class="headerlink" title=":last(获取最后一个元素)"></a>:last(获取最后一个元素)</h3><code>$(&quot;div:last&quot;)</code>所有div中的最后一个div<h3 id="not-去除所有与给定选择器匹配的元素"><a href="#not-去除所有与给定选择器匹配的元素" class="headerlink" title=":not(去除所有与给定选择器匹配的元素)"></a>:not(去除所有与给定选择器匹配的元素)</h3><code>$(&quot;div:not(.box)&quot;)</code>class名不是box的所有div<h3 id="odd-奇数"><a href="#odd-奇数" class="headerlink" title=":odd(奇数)"></a>:odd(奇数)</h3><code>$(&quot;div:odd&quot;)</code>索引是奇数的集合<h3 id="odd-偶数"><a href="#odd-偶数" class="headerlink" title=":odd(偶数)"></a>:odd(偶数)</h3><code>$(&quot;div:even&quot;)</code>索引是偶数的集合<h3 id="eq-索引"><a href="#eq-索引" class="headerlink" title=":eq(索引)"></a>:eq(索引)</h3><code>$(&quot;div:eq(1)&quot;)</code>选取索引为1的div<h3 id="gt"><a href="#gt" class="headerlink" title=":gt"></a>:gt</h3><code>$(&quot;div:gt(2)&quot;)</code>选取索引大于2的div<h3 id="lt"><a href="#lt" class="headerlink" title=":lt"></a>:lt</h3><code>$(&quot;div:lt(2)&quot;)</code>选取索引小于2的div<h3 id="header"><a href="#header" class="headerlink" title=":header"></a>:header</h3>选取所有的h(h1-h6)标签<br><code>$(&quot;.box :header&quot;)</code>类名是box的元素中所有h标签<h3 id="animated"><a href="#animated" class="headerlink" title=":animated"></a>:animated</h3>选取所有进行动画的标签(js动画,css3动画不行)</li>
 </ul>
 <blockquote>
 <p>注意:表示是指定容器下的必须加空格</p>
-<p>##4.内容过滤选择器</p>
-<p>###:contains(“内容”)<br>  <code>$(&quot;div:contains(&#39;我&#39;)&quot;)</code>所有的div中含有内容是”我”的div标签,选取的是一个jQ集合 </p>
-<p>###:has()<br>  <code>$(&quot;div:has(p)&quot;)</code>所有包含p标签的div,选取的是一个jQ集合</p>
-<p>###:empty空元素集合</p>
-<p>###:parent非空集合</p>
-</blockquote>
-<p>##5.可见性过滤选择器</p>
-<p>###:hidden 隐藏元素<br>display:none或者type=”hidden”匹配所有不可见元素,或者type为hidden的元素</p>
-<p>###:visible 可见元素</p>
-<p>##6.属性过滤选择器</p>
-<ul>
+<h2 id="4-内容过滤选择器"><a href="#4-内容过滤选择器" class="headerlink" title="4.内容过滤选择器"></a>4.内容过滤选择器</h2><h3 id="contains-“内容”"><a href="#contains-“内容”" class="headerlink" title=":contains(“内容”)"></a>:contains(“内容”)</h3><p>  <code>$(&quot;div:contains(&#39;我&#39;)&quot;)</code>所有的div中含有内容是”我”的div标签,选取的是一个jQ集合 </p>
+<h3 id="has"><a href="#has" class="headerlink" title=":has()"></a>:has()</h3><p>  <code>$(&quot;div:has(p)&quot;)</code>所有包含p标签的div,选取的是一个jQ集合</p>
+<h3 id="empty空元素集合"><a href="#empty空元素集合" class="headerlink" title=":empty空元素集合"></a>:empty空元素集合</h3><h3 id="parent非空集合"><a href="#parent非空集合" class="headerlink" title=":parent非空集合"></a>:parent非空集合</h3></blockquote>
+<h2 id="5-可见性过滤选择器"><a href="#5-可见性过滤选择器" class="headerlink" title="5.可见性过滤选择器"></a>5.可见性过滤选择器</h2><h3 id="hidden-隐藏元素"><a href="#hidden-隐藏元素" class="headerlink" title=":hidden 隐藏元素"></a>:hidden 隐藏元素</h3><p>display:none或者type=”hidden”匹配所有不可见元素,或者type为hidden的元素</p>
+<h3 id="visible-可见元素"><a href="#visible-可见元素" class="headerlink" title=":visible 可见元素"></a>:visible 可见元素</h3><h2 id="6-属性过滤选择器"><a href="#6-属性过滤选择器" class="headerlink" title="6.属性过滤选择器"></a>6.属性过滤选择器</h2><ul>
 <li><code>$(&quot;div[id]&quot;)</code>所有 有id名的div</li>
 <li><code>$(&quot;div[class=box]&quot;)</code>所有class=box的div</li>
 <li><code>$(&quot;div[class!=box]&quot;)</code>所有class!=box的div</li>
@@ -125,7 +112,7 @@
 <li><code>$(&quot;div[class$=box]&quot;)</code>所有class以box结尾的div</li>
 <li><code>$(&quot;div[class*=box]&quot;)</code>所有class含有box的div</li>
 <li><code>$(&quot;div[class|=box]&quot;)</code>所有class=box或者以box-作为前缀的div</li>
-<li><code>$(&quot;div[class~=box]&quot;)</code>所有class以空格分开后的class名中真的含有box这个类名的div<br>##7.子元素过滤选择器</li>
+<li><code>$(&quot;div[class~=box]&quot;)</code>所有class以空格分开后的class名中真的含有box这个类名的div<h2 id="7-子元素过滤选择器"><a href="#7-子元素过滤选择器" class="headerlink" title="7.子元素过滤选择器"></a>7.子元素过滤选择器</h2></li>
 <li><p><code>:nth-child(1)</code> 第一个孩子</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$(&quot;div p:nth-child(1)&quot;);</div></pre></td></tr></table></figure>
 </li>
@@ -134,7 +121,7 @@
 <li><code>:nth-child(even)</code> 所有偶数个的孩子</li>
 <li><code>:nth-child(3n)</code>n从1开始,所有是3的倍数的孩子;</li>
 <li>:first-child 第一个孩子</li>
-<li>:last-child 最后一个孩子<br>##表单对象属性过滤器<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;form id=&quot;form1&quot; action=&quot;&quot; method=&quot;post&quot;&gt;</div><div class="line">	&lt;input type=&quot;text&quot; name=&quot;&quot;  value=&quot;输入框&quot; disabled=&quot;disabled&quot;/&gt;</div><div class="line">	&lt;input type=&quot;submit&quot; value=&quot;提交按钮&quot; disabled=&quot;disabled&quot;/&gt;</div><div class="line">	&lt;input type=&quot;checkbox&quot; name=&quot;&quot; value=&quot;复选框&quot; /&gt;</div><div class="line">	&lt;input type=&quot;button&quot; name=&quot;&quot; value=&quot;按钮&quot; /&gt;</div><div class="line">	&lt;input type=&quot;file&quot; name=&quot;&quot; value=&quot;获取文件&quot; /&gt;</div><div class="line">	&lt;input type=&quot;password&quot; name=&quot;&quot; value=&quot;&quot; /&gt;</div><div class="line">	&lt;radio&gt;&lt;/radio&gt;</div><div class="line">	&lt;select name=&quot;&quot;&gt;</div><div class="line">		&lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;</div><div class="line">	&lt;/select&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure>
+<li>:last-child 最后一个孩子<h2 id="表单对象属性过滤器"><a href="#表单对象属性过滤器" class="headerlink" title="表单对象属性过滤器"></a>表单对象属性过滤器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">&lt;form id=&quot;form1&quot; action=&quot;&quot; method=&quot;post&quot;&gt;</div><div class="line">	&lt;input type=&quot;text&quot; name=&quot;&quot;  value=&quot;输入框&quot; disabled=&quot;disabled&quot;/&gt;</div><div class="line">	&lt;input type=&quot;submit&quot; value=&quot;提交按钮&quot; disabled=&quot;disabled&quot;/&gt;</div><div class="line">	&lt;input type=&quot;checkbox&quot; name=&quot;&quot; value=&quot;复选框&quot; /&gt;</div><div class="line">	&lt;input type=&quot;button&quot; name=&quot;&quot; value=&quot;按钮&quot; /&gt;</div><div class="line">	&lt;input type=&quot;file&quot; name=&quot;&quot; value=&quot;获取文件&quot; /&gt;</div><div class="line">	&lt;input type=&quot;password&quot; name=&quot;&quot; value=&quot;&quot; /&gt;</div><div class="line">	&lt;radio&gt;&lt;/radio&gt;</div><div class="line">	&lt;select name=&quot;&quot;&gt;</div><div class="line">		&lt;option value=&quot;1&quot;&gt;1&lt;/option&gt;</div><div class="line">		&lt;option value=&quot;2&quot;&gt;2&lt;/option&gt;</div><div class="line">	&lt;/select&gt;</div><div class="line">&lt;/form&gt;</div></pre></td></tr></table></figure>
 </li>
 </ul>
 <p><code>$(&quot;#form1 :enabled&quot;);</code>选取form1下面的所有可用元素<br><code>$(&quot;#form1 :disabled&quot;);</code>选取form1下面的所有不可用元素<br><code>$(&quot;#form1 :checked&quot;);</code>选出form1下所有被选中的元素<br><code>$(&quot;#form1 select option:selected&quot;);</code>下拉选项被选中的元素<br><code>$(&quot;#form1 :input&quot;);</code>input /textarea /select /button<br><code>$(&quot;:text&quot;);</code>所有的单行文本框<br><code>$(&quot;:password&quot;);</code>所有的密码框<br><code>$(&quot;:radio&quot;);</code>所有的单选框<br><code>$(&quot;:checkbox&quot;);</code>所有的复选框<br><code>$(&quot;:submit&quot;);</code>所有的提交按钮<br><code>$(&quot;:image&quot;);</code>所有的图片按钮<br><code>$(&quot;:button&quot;);</code>所有的按钮<br><code>$(&quot;:reset&quot;);</code>所有的重置按钮<br><code>$(&quot;:file&quot;);</code>所有的上传域<br><code>$(&quot;:hidden&quot;);</code>所有隐藏元素</p>
