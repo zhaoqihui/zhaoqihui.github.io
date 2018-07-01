@@ -9,11 +9,6 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[myname]]></title>
-    <url>%2F2017%2F12%2F01%2Ftry%2F</url>
-    <content type="text"><![CDATA[hahhahahhahah]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[在hexo中展示markdown文件中的图片]]></title>
     <url>%2F2017%2F07%2F26%2F%E5%9C%A8hexo%E4%B8%AD%E5%B1%95%E7%A4%BAmarkdown%E6%96%87%E4%BB%B6%E4%B8%AD%E7%9A%84%E5%9B%BE%E7%89%87%2F</url>
     <content type="text"><![CDATA[使用本地路径：在hexo/source目录下新建一个img文件夹，将图片放入该文件夹下，插入图片时链接即为/img/图片名称。使用微博图床，地址http://weibotuchuang.sinaapp.com/，将图片拖入区域中，会生成图片的URL，这就是链接地址。]]></content>
