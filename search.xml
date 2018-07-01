@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[test]]></title>
     <url>%2F2018%2F07%2F01%2Ftest%2F</url>
-    <content type="text"><![CDATA[test hahhhahhh]]></content>
+    <content type="text"><![CDATA[test gg]]></content>
       <tags>
         <tag>test</tag>
       </tags>
@@ -92,9 +92,6 @@
     <title><![CDATA[node之buffer]]></title>
     <url>%2F2016%2F01%2F02%2Fnode%E7%AC%AC%E4%BA%8C%E5%A4%A9%2F</url>
     <content type="text"><![CDATA[发布订阅模式 on emit 订阅 维护关系的 ,一对多的关系 发布 找到一对多的关系,让绑定的事情一次触发 主要依赖的就是回调函数 buffer buffer代表的是内存 node为了操作二进制生产出来的一个类型,buffer默认展示成16进制,可以和字符串无条件转换 2进制,16进制 字符串在node中只支持utf-8的格式 一个汉字utf-8有几个字节–&gt;&gt;3个字节 比字节小的单位 1个字节由8个位组成, 二进制转10进制: 当前的最大值*二进制(当前第几位-1)累加求和]]></content>
-      <categories>
-        <category>进阶中</category>
-      </categories>
       <tags>
         <tag>node.js</tag>
       </tags>
