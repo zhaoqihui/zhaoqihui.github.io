@@ -108,27 +108,25 @@
 
 
 
-  <meta name="description" content="交互模型图">
-<meta name="keywords" content="node.js">
+  <meta name="description" content="test">
+<meta name="keywords" content="test">
 <meta property="og:type" content="article">
-<meta property="og:title" content="node基础二">
-<meta property="og:url" content="http://yoursite.com/2016/01/01/客户端和服务器的交互模型/index.html">
+<meta property="og:title" content="test">
+<meta property="og:url" content="http://yoursite.com/2018/07/01/test/index.html">
 <meta property="og:site_name" content="大慧?小慧?还是慧慧吧(*^__^*) 嘻嘻……">
-<meta property="og:description" content="交互模型图">
+<meta property="og:description" content="test">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/img/前后端交互模型图.png">
-<meta property="og:updated_time" content="2017-09-08T16:08:20.254Z">
+<meta property="og:updated_time" content="2018-07-01T07:36:07.746Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="node基础二">
-<meta name="twitter:description" content="交互模型图">
-<meta name="twitter:image" content="http://yoursite.com/img/前后端交互模型图.png">
+<meta name="twitter:title" content="test">
+<meta name="twitter:description" content="test">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2016/01/01/客户端和服务器的交互模型/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/07/01/test/"/>
 
 
 
@@ -138,7 +136,7 @@
   };
 </script>
 
-  <title>node基础二 | 大慧?小慧?还是慧慧吧(*^__^*) 嘻嘻……</title>
+  <title>test | 大慧?小慧?还是慧慧吧(*^__^*) 嘻嘻……</title>
   
 
 
@@ -326,7 +324,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2016/01/01/客户端和服务器的交互模型/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/07/01/test/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zhaoqihui">
@@ -343,7 +341,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">node基础二
+          <h1 class="post-title" itemprop="name headline">test
               
             
           </h1>
@@ -368,24 +366,12 @@
                 
               
 
-              <time title="创建时间：2016-01-01 23:12:18" itemprop="dateCreated datePublished" datetime="2016-01-01T23:12:18+08:00">2016-01-01</time>
+              <time title="创建时间：2018-07-01 13:00:00 / 修改时间：15:36:07" itemprop="dateCreated datePublished" datetime="2018-07-01T13:00:00+08:00">2018-07-01</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2017-09-09 00:08:20" itemprop="dateModified" datetime="2017-09-09T00:08:20+08:00">2017-09-09</time>
               
             
           </span>
@@ -426,113 +412,8 @@
       
 
       
-        <p>交互模型图</p>
-<p><img src="/img/前后端交互模型图.png" alt="前后端交互模型图"></p>
+        <p>test</p>
 <a id="more"></a>
-<ul>
-<li>客户端:用户自己电脑的浏览器</li>
-<li>服务器端:浏览项目所在的服务器</li>
-<li>服务器的端口号:属于服务器,一台服务器上可以发布很多的项目,而每一个项目都有自己对应的房间或区域,服务器使用端口号来区分具体是哪一个项目(在0-65535之间) <ul>
-<li>一般我们把自己的项目发布到80/443这两个端口下</li>
-</ul>
-</li>
-<li>引擎:每一个浏览器都有自己的引擎,谷歌浏览器是v8引擎(webkit),火狐浏览器是Gecko引擎,Ie是Trident引擎</li>
-<li>谷歌浏览器控制台NetWork这一项,可以看到当前的客户端向服务器端发送的所有的请求以及请求的状态信息等;对于优化非常的重要  </li>
-<li>通过NetWork中观看,我们发现当我第一次把html源代码请求回来的时候,浏览器开始按照自己的引擎渲染,在渲染过程中我们还会出现重新向服务器请求css/js/img…,每一次请求步骤和请求html时的步骤是一样的,如果请求的资源次数过多,页面打开的速度和渲染的速度就会变慢,所以我们以后再页面优化的方法中,首先要做的就是<strong>减少资源请求 </strong>(减少http请求),<ul>
-<li>css合并成一个 或者如果css不是很多的话我们采用内嵌式css</li>
-<li>js合并成一个 或者采用内嵌式</li>
-<li>图片合并(雪碧图技术/css sprite)或者图片延迟加载</li>
-<li>ajax请求和资源文件的请求原理是一样的</li>
-</ul>
-</li>
-</ul>
-<h2 id="URI-URL-URN"><a href="#URI-URL-URN" class="headerlink" title="URI/URL/URN"></a>URI/URL/URN</h2><p>URI=URL+URN统一资源标识符(统一资源信息)</p>
-<h2 id="url-统一资源定位符"><a href="#url-统一资源定位符" class="headerlink" title="url 统一资源定位符"></a>url 统一资源定位符</h2><p><a href="http://v.qq.com:80/index.html?name=zhufeng&amp;age=7#bbs" target="_blank" rel="external">http://v.qq.com:80/index.html?name=zhufeng&amp;age=7#bbs</a></p>
-<ul>
-<li>http:传输协议  –&gt;客户端给服务器端的内容和服务器端传递给客户端的内容都是通过http传输协议进行传输的(我们可以把http理解为快递小哥 )</li>
-<li>v.qq.com:域名</li>
-<li>:80  端口号</li>
-<li>index.html:请求资源文件名–&gt;告诉服务器我需要请求的资源文件是谁</li>
-<li>?name=zhufeng&amp;age=7:URl问号传参–&gt;客户端传递给服务器端的内容(客户端可以把一些值传递给服务器端,服务器依然可以把一些内容传递给客户端)</li>
-<li>#bbs URL的hash(哈希值,锚点定位)</li>
-</ul>
-<h2 id="传输协议"><a href="#传输协议" class="headerlink" title="传输协议"></a>传输协议</h2><ul>
-<li><p>http:超文本传输协议,除了传输文本外还可以传输其他的东西,例如:xml等</p>
-</li>
-<li><p>https:更加安全的http</p>
-</li>
-<li><p>ftp:文件传输协议(应用于把项目源文件传递到服务器上)</p>
-</li>
-<li><p>在不指定服务器端口的情况下,每一种协议会有一个默认找的端口地址</p>
-<ul>
-<li>-&gt;http默认会找服务器的80端口</li>
-<li>–&gt;https默认会找服务器的443端口</li>
-<li>–&gt;ftp默认会找服务器的21端口</li>
-</ul>
-</li>
-</ul>
-<h2 id="URN"><a href="#URN" class="headerlink" title="URN"></a>URN</h2><p>统一资源名称</p>
-<h1 id="初识node"><a href="#初识node" class="headerlink" title="初识node"></a>初识node</h1><h2 id="node是什么"><a href="#node是什么" class="headerlink" title="node是什么"></a>node是什么</h2><p>我们之前说js是一门运行在客户端(运行在浏览器)的”轻量级”的脚本变成语言,这种说法是错的,–&gt;&gt;js目前不仅仅只能在浏览器中运行,还可以在node中运行</p>
-<ul>
-<li><p>node是衣蛾环境,供js代码执行的环境,我们可以把它等价于浏览器,只不过我们一般会把node这个环境安装到服务器端,这样的话我们就可以在服务器端使用js编写程序了,也就是说js不仅仅是客户端的语言也是服务器端的语言… </p>
-<h2 id="node和浏览器"><a href="#node和浏览器" class="headerlink" title="node和浏览器"></a>node和浏览器</h2></li>
-<li><p>node采用的是谷歌的v8引擎来渲染js的(运行的速度快,稳定,我们编写的js代码不需要考虑兼容,比如JSON.parse()这个方法对ie浏览器有兼容,而node的引擎就一个–&gt;谷歌的v8引擎,所以不需要考虑兼容)</p>
-</li>
-<li>浏览器中的’’全局js对象是window,而node环境下的全局js对象是global</li>
-<li>浏览器是安装在客户端的,为了保护客户端的安全,基本上不可能提供用js对客户电脑磁盘上的文件进行操作的功能; 但是node环境中提供了对象的I/O操作(服务器上文件的操作),我们使用js可以对服务器磁盘下的文件进行增删改查</li>
-<li>node提供给js很多新的方法:http.createServer,fs.writeFileSync,fs.readFileSync…</li>
-<li>node是基于事件驱动的异步编程(我们在node环境下编写的js程序一般都是异步编程程序)</li>
-</ul>
-<h2 id="如何让js代码在node中执行"><a href="#如何让js代码在node中执行" class="headerlink" title="如何让js代码在node中执行"></a>如何让js代码在node中执行</h2><ul>
-<li>利用webstorm嵌入的node机制,直接把编写的js通过右键”run xxx.js”在node环境中执行(不建议使用,因为有些时候我们最新执行的操作会受到之前执行的缓存的影响 )</li>
-<li>在命令窗口中执行 node xxx.js<ul>
-<li>js代码发生改变时要重新执行</li>
-</ul>
-</li>
-<li>在命令窗口中直接输入node–&gt;enter即可在当前的命令窗口中编写js代码进行测试了;(rpel命令操作),让当前任务结束就执行两次ctrl+c</li>
-</ul>
-<h2 id="node模块"><a href="#node模块" class="headerlink" title="node模块"></a>node模块</h2><p>,模块中是在node环境中供js调取使用的方法</p>
-<ul>
-<li>1)<strong>内置模块</strong>(node环境天生就提供的):http(createServer创建服务),fs(writeFileSync,readFileSync…),url…</li>
-<li>2)<strong>自定义模块</strong>(我们自己定义的模块):<ul>
-<li>在,node环境中,我们在当前的项目下创建一个js就是创建一个模块,例如,新建一个a.js,就是创建了一个a模块</li>
-<li>在b模块中获取a模块中的方法<ul>
-<li>1) 将我们要在b模块中使用的a模块中的方法在a模块中暴露出来module.exports={fn:fn}/module.exports.fn=fn,前者是批量导出</li>
-<li>2) var a=require(“./a”);表示导入当前文件夹下的a模块(不要写成”./a.js”现在a表示的是a这个模块)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>3)<strong>第三方模块</strong>(别人写好的模块我们拿来使用):在node中我们如果需要使用别人的模块,需要使用npm这个命令来进行管理(<a href="https://www.npmjs.com" target="_blank" rel="external">https://www.npmjs.com</a>)<ul>
-<li>安装:npm install less -g   将less安装到全局</li>
-<li>卸载:npm uninstall less -g   卸载全局中的less模块</li>
-<li>安装成功后在js中通过var less=require(“less”);把刚才安装的第三方模块导入到js中,这样的话我们就可以使用这个模块中提供的方法了less.render…</li>
-</ul>
-</li>
-</ul>
-<h2 id="node模块中的常用方法"><a href="#node模块中的常用方法" class="headerlink" title="node模块中的常用方法"></a>node模块中的常用方法</h2><h3 id="http模块"><a href="#http模块" class="headerlink" title="http模块"></a>http模块</h3><h4 id="http-createServer"><a href="#http-createServer" class="headerlink" title="http.createServer"></a>http.createServer</h4><ul>
-<li>创建一个服务<code>var server=http.createServer(function(request,response){//当客户端向服务器端的当前服务(端口号是80这个服务)发送一个请求,并且当前服务已经成功接收到这个请求后,执行这个回调函数});</code><ul>
-<li>request(请求):这个参数存放的是所有客户端的请求信息,包含客户端通过问号传参的方式传递给服务器的数据内容<ul>
-<li>request.url:存放的是客户端请求的文件资源的目录和名称以及传递给服务器的数据地址(即去掉传输协议,域名/ip地址和端口号的部分)</li>
-</ul>
-</li>
-<li>response(响应):提供了向客户端返回内容和数据的方法<ul>
-<li>response.write()向客户端返回内容</li>
-<li>response.end()告诉服务器响应结束了(必须加,要不然不知道这次请求的响应什么时候结束)</li>
-</ul>
-</li>
-</ul>
-</li>
-<li>为server这个服务去监听一个80端口<code>server.listen(80,function(){//当服务创建成功并且端口号监听成功后执行这个回调函数});</code>    </li>
-<li>服务创建成功后,如何向服务器端发送请求        <ul>
-<li>在浏览器中输入<a href="http://localhost:端口号/(监听的是63342端口,是webstorm给我们生成的服务给创建的一个端口" target="_blank" rel="external">http://localhost:端口号/(监听的是63342端口,是webstorm给我们生成的服务给创建的一个端口</a>)</li>
-<li>在浏览器 中输入本机的ip地址<a href="http://本机的ip地址:端口号/" target="_blank" rel="external">http://本机的ip地址:端口号/</a></li>
-</ul>
-</li>
-</ul>
-<h3 id="url模块"><a href="#url模块" class="headerlink" title="url模块"></a>url模块</h3><h4 id="url-parse"><a href="#url-parse" class="headerlink" title="url.parse()"></a>url.parse()</h4><p>用来解析URL地址的 url.parse(str,true);增加true后,在query中存储的是经过处理解析后的结果:把传递进来的多组数据以键值对的方式进行存储</p>
-<h3 id="fs模块"><a href="#fs模块" class="headerlink" title="fs模块"></a>fs模块</h3><h4 id="fs-readFileSync"><a href="#fs-readFileSync" class="headerlink" title="fs.readFileSync()"></a>fs.readFileSync()</h4><p>fs.readFileSync([path+name],[encode])同步读取指定文件中的内容,(同步读取,文件中的内容读取不完就不执行下面的操作,只有读取出来才会执行后续的操作)</p>
-
       
     </div>
 
@@ -552,7 +433,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/node-js/" rel="tag"># node.js</a>
+            <a href="/tags/test/" rel="tag"># test</a>
           
         </div>
       
@@ -565,8 +446,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/01/01/node第一天/" rel="next" title="node基础二">
-                <i class="fa fa-chevron-left"></i> node基础二
+              <a href="/2017/12/01/try/" rel="next" title="myname">
+                <i class="fa fa-chevron-left"></i> myname
               </a>
             
           </div>
@@ -574,10 +455,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/01/02/node第二天/" rel="prev" title="node之buffer">
-                node之buffer <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -626,17 +503,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -733,22 +601,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#URI-URL-URN"><span class="nav-number">1.</span> <span class="nav-text">URI/URL/URN</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#url-统一资源定位符"><span class="nav-number">2.</span> <span class="nav-text">url 统一资源定位符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#传输协议"><span class="nav-number">3.</span> <span class="nav-text">传输协议</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#URN"><span class="nav-number">4.</span> <span class="nav-text">URN</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#初识node"><span class="nav-number"></span> <span class="nav-text">初识node</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#node是什么"><span class="nav-number">1.</span> <span class="nav-text">node是什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node和浏览器"><span class="nav-number">2.</span> <span class="nav-text">node和浏览器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#如何让js代码在node中执行"><span class="nav-number">3.</span> <span class="nav-text">如何让js代码在node中执行</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node模块"><span class="nav-number">4.</span> <span class="nav-text">node模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#node模块中的常用方法"><span class="nav-number">5.</span> <span class="nav-text">node模块中的常用方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#http模块"><span class="nav-number">5.1.</span> <span class="nav-text">http模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#http-createServer"><span class="nav-number">5.1.1.</span> <span class="nav-text">http.createServer</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#url模块"><span class="nav-number">5.2.</span> <span class="nav-text">url模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#url-parse"><span class="nav-number">5.2.1.</span> <span class="nav-text">url.parse()</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fs模块"><span class="nav-number">5.3.</span> <span class="nav-text">fs模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#fs-readFileSync"><span class="nav-number">5.3.1.</span> <span class="nav-text">fs.readFileSync()</span></a></li></ol></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       
