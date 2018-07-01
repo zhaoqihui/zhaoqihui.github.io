@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="选择器回顾1234.div ul li&amp;#123;&amp;#125;第一步选择这个文档中所有的li第二部选择哪些li是ul下面的第三步选择哪些li是ul下面，ul还是div下面的  选择器的组成不要超过三个选择器的查找机制是从右向左   交集选择器  一个元素具有两个属性，可以将这两个属性做成交集选择器组成交集选择器的两部分，必须属于同一个元素">
+<meta name="keywords" content="html，css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="html+css笔记之四">
+<meta property="og:url" content="http://yoursite.com/2015/03/27/html+css第四天笔记/index.html">
+<meta property="og:site_name" content="大慧?小慧?还是慧慧吧(*^__^*) 嘻嘻……">
+<meta property="og:description" content="选择器回顾1234.div ul li&amp;#123;&amp;#125;第一步选择这个文档中所有的li第二部选择哪些li是ul下面的第三步选择哪些li是ul下面，ul还是div下面的  选择器的组成不要超过三个选择器的查找机制是从右向左   交集选择器  一个元素具有两个属性，可以将这两个属性做成交集选择器组成交集选择器的两部分，必须属于同一个元素">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2017-09-08T16:00:18.516Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="html+css笔记之四">
+<meta name="twitter:description" content="选择器回顾1234.div ul li&amp;#123;&amp;#125;第一步选择这个文档中所有的li第二部选择哪些li是ul下面的第三步选择哪些li是ul下面，ul还是div下面的  选择器的组成不要超过三个选择器的查找机制是从右向左   交集选择器  一个元素具有两个属性，可以将这两个属性做成交集选择器组成交集选择器的两部分，必须属于同一个元素">
+
+
+
+
+
+
+  <link rel="canonical" href="http://yoursite.com/2015/03/27/html+css第四天笔记/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>html+css笔记之四 | 大慧?小慧?还是慧慧吧(*^__^*) 嘻嘻……</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">大慧?小慧?还是慧慧吧(*^__^*) 嘻嘻……</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+      
+        <p class="site-subtitle">辣些岁月/(ㄒoㄒ)/~~</p>
+      
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2015/03/27/html+css第四天笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zhaoqihui">
+      <meta itemprop="description" content="前端爬爬~~">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大慧?小慧?还是慧慧吧(*^__^*) 嘻嘻……">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">html+css笔记之四
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2015-03-27 15:40:27" itemprop="dateCreated datePublished" datetime="2015-03-27T15:40:27+08:00">2015-03-27</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2017-09-09 00:00:18" itemprop="dateModified" datetime="2017-09-09T00:00:18+08:00">2017-09-09</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="选择器回顾"><a href="#选择器回顾" class="headerlink" title="选择器回顾"></a>选择器回顾</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.div</span> <span class="selector-tag">ul</span> <span class="selector-tag">li</span>&#123;&#125;</div><div class="line">第一步选择这个文档中所有的<span class="selector-tag">li</span></div><div class="line">第二部选择哪些<span class="selector-tag">li</span>是<span class="selector-tag">ul</span>下面的</div><div class="line">第三步选择哪些<span class="selector-tag">li</span>是<span class="selector-tag">ul</span>下面，<span class="selector-tag">ul</span>还是<span class="selector-tag">div</span>下面的</div></pre></td></tr></table></figure>
+<blockquote>
+<p>选择器的组成不要超过三个<br>选择器的查找机制是从右向左</p>
+</blockquote>
+<ul>
+<li>交集选择器</li>
+</ul>
+<p>一个元素具有两个属性，可以将这两个属性做成交集选择器<br><strong>组成交集选择器的两部分，必须属于同一个元素</strong></p>
+<a id="more"></a>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">h1.p1&#123;&#125;  -- &gt;  什么都选择不到</div><div class="line">p.p1&#123;&#125;   p.p2&#123;&#125;  .p1.p2&#123;&#125; p.p3&#123;&#125;</div><div class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"p1 p2 p3"</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span><span class="tag">&lt;/<span class="name">h1</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>后代选择器（派生选择器）</li>
+</ul>
+<p>祖籍 子级{}只要存在后代关系即可</p>
+<ul>
+<li>子级选择器</li>
+</ul>
+<p>父级&gt;子级{} 父子两个元素是相邻的</p>
+<h2 id="display"><a href="#display" class="headerlink" title="display"></a>display</h2><p>根据这个属性可以将元素分成不同的类型,也会是显示出不同的状态,例如属性值为block的时候,这个元素会独占一行,如果属性值为inline的时候,所有这个属性值得元素都会在一行显示,属性值为none,元素会在页面上消失<br>所有元素都有天生自带的display属性和属性值,叫做内置属性。</p>
+<h4 id="block块级元素"><a href="#block块级元素" class="headerlink" title="block块级元素"></a>block块级元素</h4><p>特点:</p>
+<ul>
+<li>独占一行</li>
+<li>可以设置盒子模型的所有属性(width,height,border,padding,margin)</li>
+<li>默认宽度是父级元素内容的宽度,高度是本身内容的高度</li>
+<li><p>可以嵌套其他元素</p>
+<ul>
+<li>dt不能嵌套其他块级,可以嵌套行内元素等</li>
+<li>p不能嵌套块级元素,可以嵌套其他行内元素等</li>
+</ul>
+</li>
+<li>永远会在父级盒子左上角开始排布，从上到下<blockquote>
+<p>人为设置的样式要比元素自带的权重高<br>块级元素这些特点，我们将其称作 BFC（block formatting context）块状元素在上下文中的渲染模式（块状元素应该怎么排布）</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="inline行内元素"><a href="#inline行内元素" class="headerlink" title="inline行内元素"></a>inline行内元素</h4><p>特点：</p>
+<ul>
+<li>在一行显示</li>
+<li>不能设置宽度，高度<br>-padding，margin 的上下值设置不生效，左右值生效</li>
+<li>默认宽度高度是本身内容的宽高</li>
+<li>几个行内元素默认的垂直方向对齐方式是基线对齐</li>
+<li>在编辑代码时，如果行内元素之间有回车或空格，那么在页面显示的时候，就会有间隙<ul>
+<li>将font-size设置为0，可以解决这个问题，但是要重新设置其他文本</li>
+</ul>
+</li>
+<li>行内元素不能嵌套块级元素</li>
+</ul>
+<h4 id="vertical-align-改变行内元素和行内块级元素的基线对齐方式"><a href="#vertical-align-改变行内元素和行内块级元素的基线对齐方式" class="headerlink" title="vertical-align 改变行内元素和行内块级元素的基线对齐方式"></a>vertical-align 改变行内元素和行内块级元素的基线对齐方式</h4><table>
+<thead>
+<tr>
+<th>值</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>top</td>
+<td>所有平级元素，去找最高（高度最高）元素的顶部进行对齐</td>
+</tr>
+<tr>
+<td>bottom</td>
+<td>所有平级元素，去找最高（高度最高）元素的底部进行对齐</td>
+</tr>
+<tr>
+<td>middle</td>
+<td>所有平级元素，去找最高（高度最高）元素的中部进行对齐</td>
+</tr>
+<tr>
+<td>length（数值）</td>
+<td>px %</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>改变对齐方式的时候，所有元素都要添加这个属性</p>
+</blockquote>
+<h4 id="none-将这个元素在页面上隐藏起来（完全消失）"><a href="#none-将这个元素在页面上隐藏起来（完全消失）" class="headerlink" title="none 将这个元素在页面上隐藏起来（完全消失）"></a>none 将这个元素在页面上隐藏起来（完全消失）</h4><blockquote>
+<p>怎样再显示出来：将none用其他的属性值替换，一般使用block</p>
+</blockquote>
+<h2 id="盒子模型"><a href="#盒子模型" class="headerlink" title="盒子模型"></a>盒子模型</h2><p>每一个元素在html中都是一个盒子，用来装其他的盒子或者是内容</p>
+<p>可以将html页面看作是一个仓库，仓库中从上到下摆了很多的箱子，易碎品（盒子和盒子之间要有距离 内容与盒子之间 盒子本身要有厚度）<br>height：100%指的是继承父级元素”内容”的高度</p>
+<p>父子关系的时候，在设置margin值得时候，一般只设置上和左右，不会设置下和右</p>
+<h4 id="margin-支持负值"><a href="#margin-支持负值" class="headerlink" title="margin  支持负值"></a>margin  支持负值</h4><p>margin-left：-30</p>
+<p>margin-left和margin-top为负值的时候跑出浏览器的部分会被吃掉，不会撑开整个页面。</p>
+<h4 id="margin-top的传递问题"><a href="#margin-top的传递问题" class="headerlink" title="margin-top的传递问题"></a>margin-top的传递问题</h4><p>如果父级元素没有padding-top或border-top的值时候，子元素设置margin-top值，会将这个值传递给父元素</p>
+<p>解决方法</p>
+<ul>
+<li>给父元素一个属性，overflow为hidden（不建议使用）</li>
+<li>将子集元素的margin-top值去掉，改成父级元素的padding-top值</li>
+</ul>
+<h4 id="margin-left-margin-right在ie6中会双倍"><a href="#margin-left-margin-right在ie6中会双倍" class="headerlink" title="margin-left/margin-right在ie6中会双倍"></a>margin-left/margin-right在ie6中会双倍</h4><p>当元素浮动的时候，有左右的外边距，有时候ie6会出现双倍边距的问题。<br>解决方案：</p>
+<ul>
+<li>给这个元素添加overflow：hidden</li>
+<li>写ie6的兼容方式，例如：<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">div</span>&#123;</div><div class="line">	<span class="attribute">float</span>:left</div><div class="line">	margin-left:<span class="number">10px</span></div><div class="line">	_margin-left:<span class="number">5px</span><span class="comment">/*浏览器是ie6的时候，读取这句话*/</span></div><div class="line">	css属性为hack</div><div class="line">	</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>！important出现在css里面的时候，这个属性会覆盖掉所有之前设置的样式<br>css hack</p>
+</blockquote>
+<h4 id="overflow-盒子内容多余部分的处理方法"><a href="#overflow-盒子内容多余部分的处理方法" class="headerlink" title="overflow: 盒子内容多余部分的处理方法"></a>overflow: 盒子内容多余部分的处理方法</h4><p>值：hidden 直接隐藏多余的<br>scroll 如果有多余部分出现滚动条，如果没有就不出现<br>auto 不论是否有多余部分，都会出现滚动条</p>
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/html，css/" rel="tag"># html，css</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2015/03/20/html+css第三天笔记/" rel="next" title="html+css笔记之三">
+                <i class="fa fa-chevron-left"></i> html+css笔记之三
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2015/04/10/AJAX中的同步编程和异步编程/" rel="prev" title="同步编程和异步编程">
+                同步编程和异步编程 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">zhaoqihui</p>
+              <p class="site-description motion-element" itemprop="description">前端爬爬~~</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">25</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  
+                    
+                    
+                      
+                    
+                    <span class="site-state-item-count">1</span>
+                    <span class="site-state-item-name">分类</span>
+                  
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">13</span>
+                    <span class="site-state-item-name">标签</span>
+                  
+                </div>
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#选择器回顾"><span class="nav-number">1.</span> <span class="nav-text">选择器回顾</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#display"><span class="nav-number">2.</span> <span class="nav-text">display</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#block块级元素"><span class="nav-number">2.0.1.</span> <span class="nav-text">block块级元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#inline行内元素"><span class="nav-number">2.0.2.</span> <span class="nav-text">inline行内元素</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#vertical-align-改变行内元素和行内块级元素的基线对齐方式"><span class="nav-number">2.0.3.</span> <span class="nav-text">vertical-align 改变行内元素和行内块级元素的基线对齐方式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#none-将这个元素在页面上隐藏起来（完全消失）"><span class="nav-number">2.0.4.</span> <span class="nav-text">none 将这个元素在页面上隐藏起来（完全消失）</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#盒子模型"><span class="nav-number">3.</span> <span class="nav-text">盒子模型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-支持负值"><span class="nav-number">3.0.1.</span> <span class="nav-text">margin  支持负值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-top的传递问题"><span class="nav-number">3.0.2.</span> <span class="nav-text">margin-top的传递问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#margin-left-margin-right在ie6中会双倍"><span class="nav-number">3.0.3.</span> <span class="nav-text">margin-left/margin-right在ie6中会双倍</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#overflow-盒子内容多余部分的处理方法"><span class="nav-number">3.0.4.</span> <span class="nav-text">overflow: 盒子内容多余部分的处理方法</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">zhaoqihui</span>
+
+  
+
+  
+</div>
+
+
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.3.8</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://theme-next.org">NexT.Pisces</a> v6.3.0</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+        // ref: https://github.com/ForbesLindesay/unescape-html
+        var unescapeHtml = function(html) {
+          return String(html)
+            .replace(/&quot;/g, '"')
+            .replace(/&#39;/g, '\'')
+            .replace(/&#x3A;/g, ':')
+            // replace all the other &#x; chars
+            .replace(/&#(\d+);/g, function (m, p) { return String.fromCharCode(p); })
+            .replace(/&lt;/g, '<')
+            .replace(/&gt;/g, '>')
+            .replace(/&amp;/g, '&');
+        };
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                content = unescapeHtml(content);
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
